@@ -1,0 +1,26 @@
+{
+  "train_batch_size": 8,
+  "eval_batch_size": 8,
+  "task_name": "sst-2",
+  "random_seed": 13,
+  "k_shot": 16,
+  "dataset_dir": "./rsc/eng_few_shot/k-shot/SST-2/16-42",
+  "learning_rate": 3e-05,
+  "max_grad_norm": 1.0,
+  "lm_model": "roberta-large",
+  "manual_template": "It was <mask> .",
+  "max_seq_length": 128,
+  "gradient_accumulation_steps": 1,
+  "num_train_epochs": 50,
+  "log_step_count_steps": 20,
+  "lambda_rate": 0.3,
+  "eval_every_step": null,
+  "demonstration_tokens": [
+    ["well worth the effort", "a total waste of my time", "a real treat to watch", "so sad", "a cultural revolution"],
+    ["an instant hit", "a gift", "entertaining on an inferior level", "an unforgettable experience", "a thriller with an edge"]
+  ],
+  "soft_token_length": 10,
+  "is_cuda": true,
+  "warmup_proportion": 0.6,
+  "tensorboard_output_dir": "./logs/sst2/16-42-soft-10-k5"
+}
