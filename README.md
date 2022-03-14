@@ -20,6 +20,8 @@ python3 trainer.py configs/sst2/16-13-sst2-conti-demon-prompting.json
 ```
 
 # Contact
+
+Do not hesitate to ask a question. Send me your question below email!
 ```
 Eunhwan Park (judepark@jbnu.ac.kr)
 ```
